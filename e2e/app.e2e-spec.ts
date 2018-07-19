@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('d3-dynamic-charts App', () => {
+describe('d3charts App', () => {
   let page: AppPage;
 
   beforeEach(() => {

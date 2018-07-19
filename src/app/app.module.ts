@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
-
-
+import { BarChartComponent, BarchartModule, DynamicDirective, LinechartComponent, LinechartModule } from 'd3charts';
+import { EditorComponent } from './editor/editor.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DynamicDirective,
+    EditorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BarchartModule,
+    LinechartModule
   ],
-  providers: [],
+  entryComponents: [
+    EditorComponent,
+    BarChartComponent,
+    LinechartComponent,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
